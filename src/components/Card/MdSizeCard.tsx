@@ -1,5 +1,5 @@
-import React, { Fragment, FunctionComponent } from "react";
-import { Text, View, ViewStyle } from "react-native";
+import React, { Fragment, FunctionComponent, useState } from "react";
+import { Image, Text, TouchableOpacity, View, ViewStyle } from "react-native";
 import {
   colorYellow,
   sw12,
@@ -14,6 +14,11 @@ import {
   fs12RegWhite1,
   fs12BoldWhite1,
   fs10RegWhite1,
+  sw24,
+  sw4,
+  sw28,
+  sh28,
+  sw25,
 } from "../../styles";
 import { Icon } from "../IcoMoon";
 import { CustomSpacer } from "../spacer";
@@ -32,14 +37,23 @@ export const MdSizeCard: FunctionComponent<IMedSizeCardProps> = ({ containerStyl
     paddingVertical: sh16,
     width: sw216,
   };
+
+  const [isLike, setisLike] = useState<boolean>(false);
   const defaultStyle = containerStyle === undefined ? cardStyle : { ...cardStyle, ...containerStyle };
 
   return (
     <Fragment>
       <View style={defaultStyle}>
         <View style={flexRowSbSb}>
-          <Icon name="logo-google" size={sw16} color={colorWhite._2} />
-          <Icon name="logo-venmo" size={sw16} />
+          <Image
+            source={{ uri: item.srcPath }}
+            style={{ width: sw28, height: sh28, borderRadius: sw25, borderWidth: sw4, backgroundColor: colorWhite._1 }}
+            resizeMethod="resize"
+            resizeMode="cover"
+          />
+          <TouchableOpacity onPress={() => setisLike((isLike) => !isLike)}>
+            <Icon name={isLike === true ? "md-heart" : "md-heart-empty"} size={sw24} color={isLike === true ? "red" : colorWhite._2} />
+          </TouchableOpacity>
         </View>
         <CustomSpacer space={sh8} />
         <View style={{ ...flexChild, justifyContent: "space-evenly" }}>

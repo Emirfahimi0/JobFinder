@@ -32,8 +32,18 @@ const App: FunctionComponent = () => {
   const typesJobs = ["Product", "Design", "Development", "FreeLance", "Management"];
 
   const popularJobs: jobList[] = [
-    { jobTitle: "Lead Product Manager", companyTitle: "Google", salaryRange: "$60K -$ 80K / Per year" },
-    { jobTitle: "Lead Product Manager", companyTitle: "Google", salaryRange: "$60K -$ 80K / Per year" },
+    {
+      jobTitle: "Lead Product Manager",
+      companyTitle: "Google",
+      salaryRange: "$60K -$ 80K / Per year",
+      srcPath: "../../assets/images/google.png",
+    },
+    {
+      jobTitle: "React Developer",
+      companyTitle: "Twitch",
+      salaryRange: "$20K -$ 40K / Per year",
+      srcPath: "../../assets/images/amazon.png",
+    },
   ];
 
   return (
