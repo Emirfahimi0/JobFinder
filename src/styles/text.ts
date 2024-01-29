@@ -1,6 +1,6 @@
 import { TextStyle } from "react-native";
 import { PoppinsBold, PoppinsRegular, PoppinsSemiBold } from "../constants";
-import { colorBlack, colorGray } from "./color";
+import { colorBlack, colorGray, colorWhite } from "./color";
 import { sh10, sh12, sh16, sh18, sh24 } from "./size";
 import { scaleHeight } from "../utils";
 
@@ -34,6 +34,12 @@ export const fs10RegBlack: TextStyle = {
   fontSize: sh10,
   lineHeight: scaleHeight(10 * 1.6),
 };
+export const fs10RegWhite1: TextStyle = {
+  color: colorWhite._1,
+  fontFamily: PoppinsRegular,
+  fontSize: sh10,
+  lineHeight: scaleHeight(10 * 1.6),
+};
 
 export const fs10RegGray2: TextStyle = {
   color: colorGray._2,
@@ -41,12 +47,14 @@ export const fs10RegGray2: TextStyle = {
   fontSize: sh10,
   lineHeight: scaleHeight(10 * 1.6),
 };
+
 export const fs10RegGray1: TextStyle = {
   color: colorGray._1,
   fontFamily: PoppinsRegular,
   fontSize: sh10,
   lineHeight: scaleHeight(10 * 1.6),
 };
+
 export const fs10SemiBoldGray3: TextStyle = {
   color: colorGray._3,
   fontFamily: PoppinsSemiBold,
@@ -59,6 +67,33 @@ export const fs12RegBlack: TextStyle = {
   fontFamily: PoppinsRegular,
   fontSize: sh12,
   lineHeight: scaleHeight(12 * 1.3),
+};
+
+export const fs12RegWhite1: TextStyle = {
+  color: colorWhite._1,
+  fontFamily: PoppinsRegular,
+  fontSize: sh12,
+  lineHeight: scaleHeight(12 * 1.3),
+};
+
+export const fs12BoldBlack: TextStyle = {
+  color: colorBlack,
+  fontFamily: PoppinsBold,
+  fontSize: sh12,
+  lineHeight: scaleHeight(12 * 1.3),
+};
+export const fs12BoldWhite1: TextStyle = {
+  color: colorWhite._1,
+  fontFamily: PoppinsBold,
+  fontSize: sh12,
+  lineHeight: scaleHeight(12 * 1.3),
+};
+
+export const fs16BoldBlack: TextStyle = {
+  color: colorBlack,
+  fontFamily: PoppinsBold,
+  fontSize: sh16,
+  lineHeight: scaleHeight(16 * 1.48),
 };
 export const fs16RegBlack: TextStyle = {
   color: colorBlack,
