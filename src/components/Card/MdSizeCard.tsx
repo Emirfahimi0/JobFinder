@@ -1,7 +1,6 @@
 import React, { Fragment, FunctionComponent, useState } from "react";
 import { Image, Text, TouchableOpacity, View, ViewStyle } from "react-native";
 import {
-  colorYellow,
   sw12,
   sh128,
   sw16,
@@ -19,18 +18,19 @@ import {
   sw28,
   sh28,
   sw25,
+  colorGray,
 } from "../../styles";
 import { Icon } from "../IcoMoon";
 import { CustomSpacer } from "../spacer";
 
-interface IMedSizeCardProps {
+export interface IMedSizeCardProps {
   containerStyle?: ViewStyle;
-  item: jobList;
+  item: JobInformation;
 }
 
 export const MdSizeCard: FunctionComponent<IMedSizeCardProps> = ({ containerStyle, item }: IMedSizeCardProps) => {
   const cardStyle: ViewStyle = {
-    backgroundColor: colorYellow,
+    backgroundColor: colorGray._1,
     borderRadius: sw12,
     height: sh128,
     paddingHorizontal: sw16,
