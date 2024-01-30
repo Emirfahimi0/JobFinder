@@ -34,6 +34,13 @@ export const fs10RegBlack: TextStyle = {
   fontSize: sh10,
   lineHeight: scaleHeight(10 * 1.6),
 };
+export const fs10BoldBlack: TextStyle = {
+  color: colorBlack,
+  fontFamily: PoppinsBold,
+  fontSize: sh10,
+  lineHeight: scaleHeight(10 * 1.6),
+};
+
 export const fs10RegWhite1: TextStyle = {
   color: colorWhite._1,
   fontFamily: PoppinsRegular,
