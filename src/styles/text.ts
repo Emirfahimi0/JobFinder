@@ -47,6 +47,12 @@ export const fs10RegWhite1: TextStyle = {
   fontSize: sh10,
   lineHeight: scaleHeight(10 * 1.6),
 };
+export const fs10BoldWhite1: TextStyle = {
+  color: colorWhite._1,
+  fontFamily: PoppinsBold,
+  fontSize: sh10,
+  lineHeight: scaleHeight(10 * 1.6),
+};
 
 export const fs10RegGray2: TextStyle = {
   color: colorGray._2,
@@ -60,6 +66,12 @@ export const fs10RegGray1: TextStyle = {
   fontFamily: PoppinsRegular,
   fontSize: sh10,
   lineHeight: scaleHeight(10 * 1.6),
+};
+export const fs12RegGray1: TextStyle = {
+  color: colorGray._1,
+  fontFamily: PoppinsRegular,
+  fontSize: sh12,
+  lineHeight: scaleHeight(12 * 1.3),
 };
 
 export const fs10SemiBoldGray3: TextStyle = {
@@ -96,12 +108,20 @@ export const fs12BoldWhite1: TextStyle = {
   lineHeight: scaleHeight(12 * 1.3),
 };
 
+export const fs14BoldBlack: TextStyle = {
+  color: colorBlack,
+  fontFamily: PoppinsBold,
+  fontSize: sh16,
+  lineHeight: scaleHeight(14 * 1.3),
+};
+
 export const fs16BoldBlack: TextStyle = {
   color: colorBlack,
   fontFamily: PoppinsBold,
   fontSize: sh16,
   lineHeight: scaleHeight(16 * 1.48),
 };
+
 export const fs16RegBlack: TextStyle = {
   color: colorBlack,
   fontFamily: PoppinsRegular,
