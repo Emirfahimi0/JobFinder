@@ -1,9 +1,10 @@
-interface INavigationParamsList extends ParamListBase {
+import { ParamListBase } from "@react-navigation/native";
+
+export interface INavigationParamsList extends ParamListBase {
   JobDetailsPage: undefined;
   HomePage: undefined;
 }
 
-type IStackNavigationProp = import("@react-navigation/stack").StackNavigationProp<INavigationParamsList>;
-type ITabNavigationProp = import("@react-navigation/bottom-tabs").BottomTabNavigationProp<ITabNavigationParamsList>;
+export type IStackNavigationProp = import("@react-navigation/native-stack").NativeStackNavigationProp<INavigationParamsList>;
 
-type TPageType = "OnBoarding" | "JobDetailsPage";
+export type TPageType = "HomePage" | "JobDetailsPage";
