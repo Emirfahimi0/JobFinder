@@ -28,7 +28,7 @@ export const SmSizeCard: FunctionComponent<SmSizeCard> = ({ item, spaceTop }: Sm
           <View>
             <Text style={fs12BoldBlack}>{item.jobTitle}</Text>
             <CustomFlexSpacer />
-            <Text style={fs10SemiBoldGray3}>{item.companyTitle}</Text>
+            <Text style={fs10SemiBoldGray3}>{item.jobTypes}</Text>
           </View>
         </View>
       </View>

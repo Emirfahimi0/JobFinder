@@ -2,7 +2,7 @@ import React, { Fragment, FunctionComponent } from "react";
 import { FlatList, Text, TouchableOpacity, View } from "react-native";
 import { flexChild, sh18, flexRowSbSb, sh8, fs16BoldBlack, fs12RegBlack, sw16, sh12 } from "../../styles";
 import { CustomSpacer } from "../spacer";
-import { MdSizeCard, SmSizeCard } from "../Card";
+import { MdSizeCard, SmSizeCard } from "../card";
 
 interface JobListComponentProps {
   jobList: JobInformation[];
